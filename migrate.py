@@ -772,7 +772,7 @@ def migrate_ig_insights_total(conn_db, conn_adb, conn_new, ig_fb_id_map, ig_inte
     insert_many(conn_new, """
         INSERT INTO ig_insights_total (
             ig_id, as_of_date,
-            total_followers, profile_views,
+            followers_count, profile_views,
             total_views, likes, comments, shares, saves,
             total_interactions, profile_links_taps,
             updated_at
